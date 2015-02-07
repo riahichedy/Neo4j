@@ -11,7 +11,7 @@ import org.neo4j.graphdb.Transaction;
 import org.neo4j.graphdb.factory.GraphDatabaseFactory;
 
 public class CreateGraph {
-    private static final String DB_PATH = "target/neo4j-hello-db";
+    private static final String DB_PATH = "src/test/neo4j-hello-db";
 
     public String greeting;
 
@@ -57,7 +57,7 @@ public class CreateGraph {
             domaine.setProperty( "type", "Domaine" );
             domaine.setProperty( "domaine_name", "http://tuto.fr" );
             domaine.setProperty( "domaine_pages", "Set<Node-pages>" );
-            domaine.setProperty( "created_on", "07022015" );
+            domaine.setProperty( "created_on", "07/02/2015" );
             page = graphDb.createNode();
             page.setProperty( "type", "page" );
             page.setProperty( "page_url", "lignes-photoshop.html" );

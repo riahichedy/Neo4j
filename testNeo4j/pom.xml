@@ -27,6 +27,16 @@
 			<version>2.1.7</version>
 		</dependency>
 	</dependencies>
+	<repositories>
+		<repository>
+			<id>neo4j-public</id>
+			<url>http://m2.neo4j.org/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+		</repository>
+	</repositories>
 	<build>
 		<plugins>
 			<plugin>
